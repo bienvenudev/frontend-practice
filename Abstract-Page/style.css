@@ -178,3 +178,23 @@ nav {
 .inner-hero {
   display: grid;
 }
+
+.card {
+  display: flex;
+  gap: .6rem;
+}
+
+.card-img {
+  /* display: flex;
+  flex-direction: column; */
+}
+
+.card-img img {
+  max-height: 100px;
+  max-width: 100%;
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
