@@ -172,7 +172,6 @@ nav {
 .hero input {
   font-size: 20px;
   padding: 10px;
-  /* width: ; */
 }
 
 .inner-hero {
@@ -181,20 +180,48 @@ nav {
 
 .card {
   display: flex;
-  gap: .6rem;
+  gap: 1.3rem;
 }
 
-.card-img {
-  /* display: flex;
-  flex-direction: column; */
+.content {
+  padding: 8rem 4rem;
 }
 
 .card-img img {
-  max-height: 100px;
-  max-width: 100%;
+  max-width: 100px;
 }
 
-.card-flex {
-  display: flex;
-  flex-wrap: wrap;
+.card-grid {
+  display: grid;
+  row-gap: 4rem;
+  column-gap: 2rem;
+  grid-template-columns: 1fr 1fr;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+@media (max-width: 770px) {
+  .card-grid {
+    grid-template-columns: 1fr;
+  }
+  .content {
+    padding: 4rem 2rem;
+  }
+}
+
+.card-content h4, .card-content p {
+  font-size: 24px;
+}
+
+.card-content a {
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.card-content a:hover {
+  text-decoration: underline;
+}
+
+.card-content p {
+  margin-bottom: 1.5rem;
 }
