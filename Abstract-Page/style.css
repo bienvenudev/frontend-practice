@@ -73,10 +73,11 @@ p, h1, h2, h3, h4, h5, h6 {
 
 body {
   font-family: var(--ff-GT);
+  background-color: var(--clr-black);
 }
 
-header {
-  background-color: var(--clr-black);
+main {
+  background-color: var(--clr-white);
 }
 
 .container {
@@ -224,4 +225,46 @@ nav {
 
 .card-content p {
   margin-bottom: 1.5rem;
+}
+
+.footer-wrapper {
+  color: var(--clr-white);
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+  max-width: 1700px;
+  margin: 0 auto;
+  padding: 2rem 4.5rem 8rem;
+}
+
+@media (max-width: 770px) {
+  .footer-wrapper {
+    gap: 2rem;
+    padding: .8rem;
+  }
+}
+
+.footer-wrapper h3 {
+  font-size: var(--fs-24);
+  margin-bottom: 1rem;
+}
+
+.footer-wrapper a {
+  text-decoration: none;
+  color: var(--clr-white);
+  display: block;
+}
+
+.footer-wrapper a:hover {
+  text-decoration: underline;
+}
+
+.column-copyright {
+  font-size: var(--fs-20);
+  margin-top: auto;
+  margin-left: auto;
+}
+
+.column-copyright img {
+  margin: 0px 0px 1rem;
 }
