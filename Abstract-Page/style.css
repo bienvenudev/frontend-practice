@@ -169,6 +169,18 @@ nav {
   letter-spacing: -4px;
 }
 
+@media (max-width: 767px) {
+  .inner-hero div {
+    font-size: 64px;
+  }
+}
+
+@media (max-width: 520px) {
+  .inner-hero div {
+    font-size: var(--fs-40);
+  }
+}
+
 .hero input {
   font-size: 20px;
   padding: 10px;
@@ -205,7 +217,7 @@ nav {
     grid-template-columns: 1fr;
   }
   .content {
-    padding: 4rem 2rem;
+    padding: 4rem 1rem;
   }
 }
 
