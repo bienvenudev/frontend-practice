@@ -1,0 +1,58 @@
+:root {
+  --clr-bg: #FFFBF3;
+  --clr-img-bg: #FFEBC3;
+  --clr-border: #C9C9C9;
+  --clr-black: #000000;
+  --clr-primary: #FFA800;
+  --clr-secondary: #E89058;
+
+  --fs-22: 22px;
+  --fs-24: 24px;
+  --fs-36: 36px;
+  --fs-92: 92px;
+
+  --ff-Inter: "Inter", serif;
+}
+
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+body {
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+}
+
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+  font-style: italic;
+}
+
+input, button, textarea, select {
+  font: inherit;
+}
+
+p, h1, h2, h3, h4, h5, h6 {
+  overflow-wrap: break-word;
+}
+/*
+  Screen reader
+*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0,0,0,0);
+  white-space: nowrap;
+  border-width: 0;
+}
+
