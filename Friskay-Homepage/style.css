@@ -13,7 +13,8 @@
   --fs-24: 24px;
   --fs-36: 36px;
   --fs-41: 41px;
-  --fs-92: 92px;
+  --fs-60: 60px;
+  --fs-64: 64px;
 
   --ff-Inter: "Inter", serif;
 }
@@ -75,6 +76,7 @@ body {
 .header__navbar {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .header__home,
@@ -110,19 +112,37 @@ body {
   height: 100%;
   padding: 2em;
   flex-direction: column;
-  gap: 3rem;
+  gap: 2rem;
   align-items: end;
   transition: all 0.5s ease-in-out;
 }
 
-.header__menu,
-.header__close {
+.header__menu button,
+.header__close button {
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.header__menu button:focus-visible,
+.header__close button:focus-visible {
+  outline: .5em dashed black;
 }
 
 .header__close {
   position: relative;
   display: block;
+}
+
+.header__close button {
+  background-color: black;
+  color: white;
+  padding: .2em .6em;
+  border-radius: 90px;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 .hero {
@@ -180,10 +200,65 @@ body {
   background-color: var(--clr-img-bg);
   border-radius: 50%;
   width: 90%;
-  max-width: 600px;
+  max-width: 450px;
   margin: 0 auto;
 }
 
-/* .hero__image img {
+@media (min-width: 700px) {
+  .hero__content-title {
+    font-size: var(--fs-60);
+  }
 
-} */
+  .hero__content-text {
+    font-size: var(--fs-24);
+  }
+}
+
+@media (min-width: 1024px) {
+  .hero__content-title {
+    font-size: var(--fs-64);
+  }
+
+  .header__home,
+  .header__right-nav {
+    display: block;
+  }
+  
+  .header__menu button,
+  .header__close button {
+    display: none;
+  }
+  
+  .header__right-nav ul {
+    gap: 1.5em;
+    flex-direction: row;
+  }
+  
+  .header__left-nav {
+    display: flex;
+    align-items: center;
+    gap: 1.5em;
+  }
+  
+  .header__home {
+    border-left: 2px solid;
+  }
+  
+  .header__home a {
+    text-decoration: none;
+    color: var(--clr-black);
+    font-size: var(--fs-22);
+    font-weight: 400;
+    margin-left: 1em;
+  }
+  
+  .hero {
+    text-align: left;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 2em;
+  }
+  }
+
+ 
