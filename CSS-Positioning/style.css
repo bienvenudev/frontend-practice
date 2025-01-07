@@ -1,0 +1,93 @@
+:root {
+  /* either --dark-mode or --no-dark-mode */
+  --color-scheme: var(--dark-mode);
+
+  --font-family: "Space Grotesk", sans-serif;
+  --fs-400: 1rem;
+  --fs-500: 1.125rem;
+  --fw-regular: 400;
+  --fw-semi-bold: 500;
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(270, 3%, 87%);
+  --clr-neutral-300: hsl(279, 6%, 55%);
+  --clr-primary-400: hsl(249, 99%, 64%);
+  --clr-primary-500: hsl(278, 94%, 30%);
+  --clr-primary-800: hsl(278, 68%, 11%);
+  --clr-accent-400: hsl(0, 100%, 66%);
+  --gradient-1: var(--clr-primary-400, --clr-primary-500);
+
+  /* settings */
+  --no-dark-mode: light;
+  --dark-mode: dark light;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  color-scheme: dark;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  font-size: var(--fs-400);
+  line-height: 1.6;
+}
+
+main {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.card-front{
+  position: relative;
+  width: fit-content;
+  display: grid;
+  gap: 1em;
+}
+
+.card-front .logo img{
+  position: absolute;
+  top: 2em;
+  left: 2em;
+   
+}
+
+.card-front .account{
+  position: absolute;
+  top: 4em;
+  left: 1em;
+  font-size: 1.999rem;
+   
+}
+
+.card-front .name{
+  position: absolute;
+  top: 12em;
+  left: 2em;
+  /* text-transform: uppercase; */
+  /* letter-spacing: .1em; */
+   
+}
+
+.card-front .expiry{
+  position: absolute;
+  top: 12em;
+  right: 1em;
+  /* text-transform: uppercase;
+  letter-spacing: .1em; */
+   
+}
+
+
+
+
+
+
