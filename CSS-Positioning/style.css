@@ -41,16 +41,27 @@ body {
 
 main {
   width: 80%;
-  max-width: 1200px;
+  max-width: 1300px;
   margin: 0 auto;
   padding: 2rem;
+}
+
+main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  gap: 7rem;
+}
+
+.left-container {
+  display: grid;
+  gap: 1em;
 }
 
 .card-front{
   position: relative;
   width: fit-content;
-  display: grid;
-  gap: 1em;
 }
 
 .card-front .logo img{
@@ -72,22 +83,32 @@ main {
   position: absolute;
   top: 12em;
   left: 2em;
-  /* text-transform: uppercase; */
-  /* letter-spacing: .1em; */
-   
 }
 
 .card-front .expiry{
   position: absolute;
   top: 12em;
-  right: 1em;
-  /* text-transform: uppercase;
-  letter-spacing: .1em; */
-   
+  right: 2em;   
 }
 
+.card-back {
+  position: relative;
+  width: fit-content;
+  transform: translateX(15%);
+}
 
+.card-back-number {
+  position: absolute;
+  top: 43%;
+  right: 11%;
+}
 
-
+form {
+  background-color: var(--clr-neutral-300);
+  display: grid;
+  place-content: center;
+  padding: .5em;
+  font-size: 1.2rem;
+}
 
 
