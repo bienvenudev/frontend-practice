@@ -111,4 +111,29 @@ form {
   font-size: 1.2rem;
 }
 
+@media (max-width: 980px) {
+  body {
+    margin-top: 10rem;
+  }
+  main {
+    grid-template-columns: 1fr;
+    position: relative;
+  }
+
+  form {
+    position: absolute;
+    bottom: -20%;
+    z-index: -1;
+  }
+
+  .left-container {
+    grid-template-columns: 1fr 1fr;
+    gap: revert;
+  }
+
+  .card-back {
+    transform: translateY(-50%);
+  }
+
+}
 
